@@ -3,6 +3,11 @@ import "./Home.css";
 import Card from "../componet/card";
 import "../componet/video.css";
 import Video from "../Assets/Footage.mp4";
+import big from "../Assets/big.avif";
+import small1 from "../Assets/1.avif";
+import small2 from "../Assets/2.avif";
+import small3 from "../Assets/3.avif";
+import small4 from "../Assets/4.avif";
 
 export default function Home() {
   return (
@@ -47,58 +52,36 @@ export default function Home() {
         </div>
 
         <div className="image-gallery">
-          <h2>Image Gallery</h2>
-          <div className="row">
-            <div className="col-lg-6">
-              <img
-                src="https://via.placeholder.com/300"
-                alt="Big Image"
-                style={{ marginBottom: "-5px", marginRight: "-5px" }}
-              />
+          <div className="gallery-container">
+            <div className="big-image">
+              <div className="image-wrapper">
+                <img src={big} alt="" />
+                <h3>Top 10 fun games 2024</h3>
+                <p>PC</p>
+              </div>
             </div>
-            <div className="col-lg-3 d-flex flex-column justify-content-between">
-              <img
-                src="https://via.placeholder.com/150"
-                alt="Top Left Image"
-                style={{
-                  marginTop: "-5px",
-                  marginLeft: "-5px",
-                  marginBottom: "-5px",
-                  marginRight: "-5px",
-                }}
-              />
-              <img
-                src="https://via.placeholder.com/150"
-                alt="Bottom Left Image"
-                style={{
-                  marginTop: "-5px",
-                  marginLeft: "-5px",
-                  marginBottom: "-5px",
-                  marginRight: "-5px",
-                }}
-              />
-            </div>
-            <div className="col-lg-3 d-flex flex-column justify-content-between">
-              <img
-                src="https://via.placeholder.com/150"
-                alt="Top Right Image"
-                style={{
-                  marginTop: "-5px",
-                  marginLeft: "-5px",
-                  marginBottom: "-5px",
-                  marginRight: "-5px",
-                }}
-              />
-              <img
-                src="https://via.placeholder.com/150"
-                alt="Bottom Right Image"
-                style={{
-                  marginTop: "-5px",
-                  marginLeft: "-5px",
-                  marginBottom: "-5px",
-                  marginRight: "-5px",
-                }}
-              />
+
+            <div className="small-images">
+              <div className="image-wrapper">
+                <img src={small1} alt="" />
+                <h3>This new game is crazy</h3>
+                <p>PS4</p>
+              </div>
+              <div className="image-wrapper">
+                <img src={small2} alt="" />
+                <h3>Up coming game</h3>
+                <p>PC</p>
+              </div>
+              <div className="image-wrapper">
+                <img src={small3} alt="" />
+                <h3>Top games</h3>
+                <p>XBOX</p>
+              </div>
+              <div className="image-wrapper">
+                <img src={small4} alt="" />
+                <h3>Action Games</h3>
+                <p>PC</p>
+              </div>
             </div>
           </div>
         </div>
